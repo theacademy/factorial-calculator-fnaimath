@@ -34,11 +34,11 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-	 	if (!this.scanner.hasNextInt()) {
+	 	if (!this.scanner.hasNextInt()) { //checks if factorial is integer
 			this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
 			return -1;
 		} 
-		int fact = this.scanner.nextInt();
+		int fact = this.scanner.nextInt(); //checks if factorial is in range
 		if (fact > 10 || fact < 0){
 			this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
 			return -1;
@@ -63,13 +63,11 @@ public class Factorial {
 		 
 		int result = 1;
 		//YOUR CODE STARTS HERE
-		int count = 2;
+		int count = 1;				//calculates factorial  
 		while(count <= num){
 			result = result*count;
 			count++;
-		}
-		if (num == 1)
-			result = 1; 
+		} 
 
 		//YOUR CODE ENDS HERE
 		this.printStream.print("The Factorial is: " + result);		
