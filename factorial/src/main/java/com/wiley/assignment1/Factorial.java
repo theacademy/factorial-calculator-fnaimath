@@ -34,6 +34,10 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
+	 	if (!this.scanner.hasNextInt()) {
+			this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
+			return -1;
+		} 
 		int fact = this.scanner.nextInt();
 		if (fact > 10 || fact < 0){
 			this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
